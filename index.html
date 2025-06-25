@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>GenWeathers 2</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input">
+        <input type="submit" value="Search" class="search-form-button" id="search-form-button">
+    </form>
+    </header>
+    <main>
+        <div class="weather-app-data">
+  <div>
+    <h1 class="weather-app-city" id="weather-app-city"></h1>
+    <p class="weather-app-details">
+        <span id="time"></span>, 
+        <span id="current-condition"></span>
+        <br>
+        Humidity: <strong id="humidity">73%</strong>,  Wind: <strong id="wind">3.6 km/h</strong>
+    </p>
+</div>
+        <div class="main-temperature">
+            <span id="main-temperature-icon" class="main-temperature-icon"></span>
+            <span class="main-temperature" id="main-temperature"></span>
+             <span class="main-temperature-unit">°C</span>
+        </div>
+    </div>
+    <div class="weather-forecast">
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Tue</div>
+                <div class="weather-forecast-icon">🌑</div>
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature"> <strong>18°</strong></div>
+                    <div class="weather-forecast-temperature"> 7°</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Wed</div>
+                <div class="weather-forecast-icon">🌑</div>
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature"> <strong>18°</strong></div>
+                    <div class="weather-forecast-temperature"> 7°</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Thu</div>
+                <div class="weather-forecast-icon">🌑</div>
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature"> <strong>18°</strong></div>
+                    <div class="weather-forecast-temperature"> 7°</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Fri</div>
+                <div class="weather-forecast-icon">🌑</div>
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature"> <strong>18°</strong></div>
+                    <div class="weather-forecast-temperature"> 7°</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Sat</div>
+                <div class="weather-forecast-icon">🌑</div>
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature"> <strong>18°</strong></div>
+                    <div class="weather-forecast-temperature"> 7°</div>
+                </div>
+            </div>
+            </div>
+    </main>
+    <footer>
+        Coded by 
+        <a href="https://github.com/genevieve-exe" target="_blank">Geneviev&eacute; Kibongui</a>
+        , is open-sourced on 
+        <a href="https://github.com/" target="_blank">GitHub</a> 
+        & hosted on 
+        <a href="https://genweathersapp.netlify.app/" target="_blank">Netlify</a>.</footer>
+        <script src="src/index.js"></script>
+</div>
+    </body>
+</html>

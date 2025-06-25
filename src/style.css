@@ -1,0 +1,108 @@
+body {
+    background: #F6F5FA;
+}
+.container {
+    font-family: "Roboto", sans-serif;
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.09);
+    border-radius: 20px;   
+}
+.search-form-input {
+    color: #272044;
+    background-color: #F6F5FA;
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-right: 10px;
+}
+.search-form-button {
+    background-color: #272044;
+    color: #F6F5FA;
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 17%;
+}
+header {
+    border-bottom: 1.5px solid #F6F5FA;
+    padding-bottom: 20px;
+}
+.weather-app-city {
+    color: #272044;
+}
+.weather-app-details {
+    color: #272044;
+    line-height: 28px;
+}
+.weather-app-details strong {
+    color: palevioletred;
+    font-weight: lighter;
+}
+.main-temperature {
+    font-size: 80px;
+    color: #272044;
+    font-weight: bold;
+    display: flex;
+    padding-top: 15px;
+}
+.main-temperature-unit {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-top: 28px;
+}
+.main-temperature-icon {
+    width: 60px;
+    padding-top: 15px;
+}
+.weather-app-data {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    padding: 20px 0 10px 0;
+
+}
+.weather-forecast {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.weather-forecast-date {
+    color: slategray;
+    line-height: 24px;
+    text-align: center;
+}
+.weather-forecast-icon {
+    font-size: 38px;
+    text-align: center;
+}
+.weather-forecast-temperatures {
+    color: palevioletred;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.weather-forecast-temperature {
+    padding: 0 4px
+}
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #272044;
+    font-size: 13px;
+    text-align: center;
+    opacity: 0.65;
+    border-top: 1.5px solid #F6F5FA;
+    padding-top: 20px;
+}
+footer a {
+    color: pink;
+}
