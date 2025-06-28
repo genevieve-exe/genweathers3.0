@@ -75,19 +75,24 @@ function displayForecast(response) {
 
     let forecastHtml = "";
     
-    response.data.daily.forEach(function(day) {
+    response.data.daily.forEach(function(day, index) {
+        if (index < 6) { // Show only 6 days
+            let date = new Date(day.time * 1000);
+            let dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
 
-    forecastHtml = forecastHtml +`
-    <div class="weather-forecast-day">
-                <div class="weather-forecast-date">${day}</div>
-                <div class="weather-forecast-icon">🌑</div>
+            forecastHtml = forecastHtml +`
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">${dayName}</div>
+                <img src="${day.condition.icon_url}" class="weather-forecast-icon" alt="${day.condition.description}">
                 <div class="weather-forecast-temperatures">
                     <div class="weather-forecast-temperature">
-                     <div class="weather-forecast-temperature"> <strong> ${Math.round(day.temperature.maximum)}</strong></div>
-                    <div class="weather-forecast-temperature"> 7°</div>
+                        <strong>${Math.round(day.temperature.maximum)}°</strong>
+                    </div>
+                    <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}°</div>
                 </div>
             </div>
-`;
+            `;
+        }
     });
 
     forecast.innerHTML = forecastHtml;
@@ -96,5 +101,3 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 searchCity("Tokyo");
-fetchForecast("Tokyo");
-displayForecast();
