@@ -4,7 +4,7 @@ body {
 .container {
     font-family: "Roboto", sans-serif;
     background: white;
-    max-width: 600px;
+    max-width: 800px;
     margin: 30px auto;
     padding: 30px;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.09);
@@ -66,12 +66,20 @@ header {
 }
 main {
     padding: 20px 0 10px 0;
-
+    background-color: #F6F5FA;
+    padding: 20px;
+    border-radius: 20px;
 }
 .weather-forecast {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+}
+.weather-forecast-day {
+    background-color: #272044;
+    padding: 3px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.2);
+    border-radius: 20px;
 }
 .weather-forecast-date {
     color: slategray;
@@ -94,12 +102,11 @@ main {
 }
 footer{
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 10px;
     color: #272044;
     font-size: 13px;
     text-align: center;
-    opacity: 0.65;
     border-top: 1.5px solid #F6F5FA;
     padding-top: 20px;
 }
